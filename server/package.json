@@ -9,12 +9,10 @@
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rm -rf build",
-    "clean-all": "rm -rf node_modules build",
     "start": "npm run build && node build/index.js"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "typescript": "^5.8.3"
+    "@types/node": "^24.1.0"
   },
   "dependencies": {
     "fastify": "^5.4.0"
