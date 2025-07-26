@@ -1,0 +1,27 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "author": "Archie Newman",
+  "description": "todos for learning",
+  "type": "module",
+  "license": "ISC",
+  "workspaces": [
+    "server"
+  ],
+  "scripts": {
+    "clean-all": "rm -rf node_modules",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoltPlays/todos.git"
+  },
+  "homepage": "https://github.com/BoltPlays/todos#readme",
+  "bugs": {
+    "url": "https://github.com/BoltPlays/todos/issues"
+  }
+}
