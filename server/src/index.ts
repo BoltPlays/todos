@@ -1,4 +1,4 @@
-import Fastify from "fastify";
+import Fastify from 'fastify';
 
 const fastify = Fastify({
   logger: true,
@@ -7,8 +7,8 @@ const fastify = Fastify({
 const PORT: number = 3000;
 
 // Declare a route
-fastify.get("/", function (_request, reply) {
-  reply.send({ hello: "world" });
+fastify.get('/', function (_request, reply) {
+  reply.send({ hello: 'world' });
 });
 
 // Run the server!
@@ -18,4 +18,3 @@ fastify.listen({ port: PORT }, function (err, _address) {
     process.exit(1);
   }
 });
-

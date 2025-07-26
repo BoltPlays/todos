@@ -7,9 +7,8 @@
   "license": "ISC",
   "main": "index.ts",
   "scripts": {
-    "build": "npm run clean && tsc --project tsconfig.json",
+    "build": "npm run clean && tsc",
     "clean": "rm -rf build",
-    "clean-all": "rm -rf node_modules build",
     "start": "npm run build && node build/index.js"
   },
   "devDependencies": {

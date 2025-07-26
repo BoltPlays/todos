@@ -9,9 +9,11 @@
     "server"
   ],
   "scripts": {
-    "clean-all": "rm -rf node_modules"
+    "clean-all": "rm -rf node_modules",
+    "format": "prettier --write ."
   },
   "devDependencies": {
+    "prettier": "^3.6.2",
     "typescript": "^5.8.3"
   },
   "repository": {
