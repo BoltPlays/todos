@@ -7,8 +7,9 @@
     /* For transpiling with TypeScript: */
     "module": "NodeNext",
     "outDir": "build",
-    "sourceMap": false
+    "sourceMap": false,
+
+    "baseUrl": "."
   },
   "include": ["src/**/*.ts"]
 }
-
