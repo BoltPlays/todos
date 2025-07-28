@@ -3,12 +3,10 @@
   "compilerOptions": {
     /* Node environment */
     "lib": ["es2022"],
-
     /* For transpiling with TypeScript: */
     "module": "NodeNext",
     "outDir": "build",
     "sourceMap": false,
-
     "baseUrl": "."
   },
   "include": ["src/**/*.ts"]

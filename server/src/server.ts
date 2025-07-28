@@ -1,15 +1,14 @@
 import Fastify from 'fastify';
 
+import getTodosRoute from './routes/todos/get.js';
+
 const fastify = Fastify({
   logger: true,
 });
 
 const PORT: number = 3000;
 
-// Declare a route
-fastify.get('/', function (_request, reply) {
-  reply.send({ hello: 'world' });
-});
+fastify.register(getTodosRoute, { prefix: '/api/todos' });
 
 // Run the server!
 fastify.listen({ port: PORT }, function (err, _address) {
