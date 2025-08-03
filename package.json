@@ -6,13 +6,15 @@
   "type": "module",
   "license": "ISC",
   "workspaces": [
-    "server"
+    "server",
+    "db"
   ],
   "scripts": {
-    "clean-all": "rm -rf node_modules",
+    "clean": "rm -rf db/db_data",
+    "clean-all": "rm -rf node_modules db/db_data",
     "format": "prettier --write .",
-    "db:start": "docker compose up -d",
-    "db:stop": "docker compose down --rmi local",
+    "db:start": "docker compose -f ./db/docker-compose.yml up -d",
+    "db:stop": "docker compose -f ./db/docker-compose.yml down  --rmi local",
     "db:restart": "npm run db:stop && npm run db:start"
   },
   "devDependencies": {
@@ -28,3 +30,4 @@
     "url": "https://github.com/BoltPlays/todos/issues"
   }
 }
+
