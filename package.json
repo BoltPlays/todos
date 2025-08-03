@@ -10,7 +10,10 @@
   ],
   "scripts": {
     "clean-all": "rm -rf node_modules",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "db:start": "docker compose up -d",
+    "db:stop": "docker compose down --rmi local",
+    "db:restart": "npm run db:stop && npm run db:start"
   },
   "devDependencies": {
     "prettier": "^3.6.2",

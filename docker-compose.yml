@@ -1,4 +1,4 @@
-version: "3.1"
+version: "3.7"
 
 services:
   mongo:
@@ -10,5 +10,10 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
+      MONGO_INITDB_DATABASE: todos
     volumes:
-      - ./db_data/:/data/db/
+      - ./db_data:/data/db/
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+
+volumes:
+  db_data:
