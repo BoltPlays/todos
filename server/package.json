@@ -15,6 +15,7 @@
     "@types/node": "^24.1.0"
   },
   "dependencies": {
+    "@fastify/mongodb": "^9.0.2",
     "fastify": "^5.4.0"
   }
 }
