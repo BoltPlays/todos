@@ -8,11 +8,15 @@
   "main": "index.ts",
   "scripts": {
     "build": "npm run clean && tsc",
+    "build:dev": "npm run clean && tsc --watch",
+    "dev": "nodemon build/server.js",
     "clean": "rm -rf build",
-    "start": "npm run build && node build/server.js"
+    "start": "npm run build && node build/server.js",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0"
+    "@types/node": "^24.1.0",
+    "nodemon": "^3.1.10"
   },
   "dependencies": {
     "@fastify/mongodb": "^9.0.2",

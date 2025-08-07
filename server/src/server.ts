@@ -7,7 +7,7 @@ const fastify = Fastify({
   logger: true,
 });
 
-const PORT: number = 3000;
+const PORT = 3000;
 
 fastify.register(getTodosRoute, { prefix: '/api/todos' });
 
