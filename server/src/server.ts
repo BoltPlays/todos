@@ -17,7 +17,7 @@ fastify.register(MongoDb, {
   forceClose: true,
 
   url: 'mongodb://admin:admin@localhost:27017/todos?authSource=admin'
-})
+});
 
 // Run the server!
 fastify.listen({ port: PORT }, function (err, _address) {
