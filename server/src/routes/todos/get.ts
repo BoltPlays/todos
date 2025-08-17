@@ -5,11 +5,11 @@ const getTodosRoute: FastifyPluginCallback = (fastify, _options, done) => {
     const todosCollection = this.mongo.db?.collection('todos');
 
     try {
-      const todos = await todosCollection?.find({}).toArray()
+      const todos = await todosCollection?.find({}).toArray();
 
-      return todos
+      return todos;
     } catch (err) {
-      return err
+      return err;
     }
   });
 
