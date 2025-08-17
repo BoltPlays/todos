@@ -10,8 +10,6 @@
     "build": "npm run clean && tsc",
     "build:dev": "tsc --watch",
     "start:dev": "nodemon build/server.js",
-    "start:test": "nodemon build/learning/test.js",
-    "learning": "concurrently 'npm run build:dev' 'npm run start:test'",
     "dev": "concurrently 'npm run build:dev' 'npm run start:dev'",
     "clean": "rm -rf build",
     "start": "npm run build && node build/server.js",
