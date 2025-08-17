@@ -16,7 +16,7 @@ fastify.register(MongoDb, {
   // the default value is false
   forceClose: true,
 
-  url: 'mongodb://admin:admin@localhost:27017/todos?authSource=admin'
+  url: 'mongodb://admin:admin@localhost:27017/todos?authSource=admin',
 });
 
 // Run the server!

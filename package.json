@@ -7,7 +7,8 @@
   "license": "ISC",
   "workspaces": [
     "server",
-    "db"
+    "db",
+    "learning"
   ],
   "scripts": {
     "clean": "sudo rm -rf db/db_data",
