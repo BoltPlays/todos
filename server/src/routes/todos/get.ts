@@ -1,7 +1,7 @@
 import type { FastifyPluginCallback } from 'fastify';
 
 const getTodosRoute: FastifyPluginCallback = (fastify, _options, done) => {
-  fastify.get('/get-todos', async function (request, reply) {
+  fastify.get('/get-todos', async function (_request, _reply) {
     const todosCollection = this.mongo.db?.collection('todos');
 
     try {
