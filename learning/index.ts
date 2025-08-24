@@ -3,7 +3,12 @@
 
 console.log(this);
 
-const test = {
+interface Test {
+    name: string;
+    foo: () => void;
+}
+
+const test: Test = {
     name: 'Archie',
     foo: function () {
         console.log('foo')

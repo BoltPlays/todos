@@ -1,7 +1,7 @@
 import Fastify from 'fastify';
 import MongoDb from '@fastify/mongodb';
 
-import getTodosRoute from './routes/todos/get.js';
+import todosRoutePlugin from './plugins/todos.js';
 
 const fastify = Fastify({
   logger: true,
@@ -9,7 +9,7 @@ const fastify = Fastify({
 
 const PORT = 3000;
 
-fastify.register(getTodosRoute, { prefix: '/api/todos' });
+fastify.register(todosRoutePlugin, { prefix: '/api/todos' });
 
 fastify.register(MongoDb, {
   // force to close the mongodb connection when app stopped
@@ -26,3 +26,7 @@ fastify.listen({ port: PORT }, function (err, _address) {
     process.exit(1);
   }
 });
+
+// Domain Driven Design
+// https://localhost:3000/api/todos/get-all
+// https://localhost:3000/api/todos/add
