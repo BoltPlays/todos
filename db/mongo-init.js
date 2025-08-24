@@ -7,11 +7,9 @@ db.createUser({
 db.todos.drop();
 db.todos.insertMany([
   {
-    _id: 1,
     value: 'woof',
   },
   {
-    _id: 2,
     value: 'hello',
   },
 ]);
