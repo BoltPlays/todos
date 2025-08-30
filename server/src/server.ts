@@ -5,6 +5,11 @@ import todosRoutePlugin from './plugins/todos.js';
 
 const fastify = Fastify({
   logger: true,
+  ajv: {
+    customOptions: {
+      removeAdditional: false,
+    },
+  },
 });
 
 const PORT = 3000;
@@ -27,6 +32,8 @@ fastify.listen({ port: PORT }, function (err, _address) {
   }
 });
 
-// Domain Driven Design
+// Domain Driven Design??
 // https://localhost:3000/api/todos/get-all
-// https://localhost:3000/api/todos/add
+// https://localhost:3000/api/todos/add-one
+// https://localhost:3000/api/todos/delete-one
+// https://localhost:3000/api/todos/delete-all

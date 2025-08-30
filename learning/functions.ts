@@ -5,7 +5,7 @@
 // function can be re used with out re typing out the same code again
 // easy to test and debug
 
-import { print } from "./helper.js";
+import { print } from './helper.js';
 
 // what is a parameter
 // it's the same as declaring a vairable (const/let)
@@ -16,10 +16,10 @@ const combined = thingOne + ' ' + thingTwo;
 // print(combined)
 
 function addNumbers(firstNumber: number, secondNumber: number) {
-    return firstNumber + secondNumber;
+  return firstNumber + secondNumber;
 }
 
 print('hello');
 
-const answer = addNumbers(2, 5)
-print(answer)
+const answer = addNumbers(2, 5);
+print(answer);
