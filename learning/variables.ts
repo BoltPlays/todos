@@ -10,26 +10,26 @@ const banana = 'bananana';
 const banana2 = 'bananana';
 
 if (banana === banana2) {
-    // console.log('YES')
+  // console.log('YES')
 }
 
 // Objects
 
 let test = {
-    name: 'test',
-    age: 10,
+  name: 'test',
+  age: 10,
 };
 
 const user = {
-    name: 'test',
-    age: 30,
+  name: 'test',
+  age: 30,
 };
 
-const checkAgeStatus = (age: number) => (age > 15 ? 'active' : 'inactive')
+const checkAgeStatus = (age: number) => (age > 15 ? 'active' : 'inactive');
 
 const addUserStatus = (user: any) => ({
-    ...user,
-    status: checkAgeStatus(user.age),
+  ...user,
+  status: checkAgeStatus(user.age),
 });
 
 const userWithStatus = addUserStatus(user);

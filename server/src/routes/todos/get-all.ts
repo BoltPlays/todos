@@ -12,7 +12,7 @@ export const getAllTodosRoute = (fastify: FastifyInstance) => {
       return err;
     }
   });
-}
+};
 
 // REST API
 // Representational State Transfer

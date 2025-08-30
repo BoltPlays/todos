@@ -4,16 +4,16 @@
 console.log(this);
 
 interface Test {
-    name: string;
-    foo: () => void;
+  name: string;
+  foo: () => void;
 }
 
 const test: Test = {
-    name: 'Archie',
-    foo: function () {
-        console.log('foo')
-        console.log(this.name)
-    }
-}
+  name: 'Archie',
+  foo: function () {
+    console.log('foo');
+    console.log(this.name);
+  },
+};
 
-test.foo()
+test.foo();
