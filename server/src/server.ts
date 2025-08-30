@@ -5,6 +5,11 @@ import todosRoutePlugin from './plugins/todos.js';
 
 const fastify = Fastify({
   logger: true,
+  ajv: {
+    customOptions: {
+      removeAdditional: false,
+    },
+  }
 });
 
 const PORT = 3000;
